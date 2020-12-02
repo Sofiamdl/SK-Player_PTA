@@ -164,45 +164,92 @@ body{
 }
 
 @media (max-width: 768px){
+    .zoom{
+        zoom: 50%
+    }
     .title-page{
-        font-size:3rem ;
+        font-size:1.5rem ;
         text-align:center
     }
-
     
+    #nome-musica{
+        font-size: 0.9rem;
+    }
+
+    .logo{
+        height: 1.3rem;
+        margin:0;
+        margin-right: 2rem;
+        margin-top: 0.6rem;
+    }
+
     .main-page{
-        height:70rem;
-        width: 45rem;
+        height:35rem;
+        width: 100%;
     }
     .player{
         width: auto;
         height: auto;
         flex-direction: column !important;
         justify-content: space-between;
-        height: 54rem;
-        width: 40rem;
+        height: 27rem;
+        width: 18rem;
     }
     .image{
         width: 100%;
-        height: 30rem;
-        padding: 5rem 0rem;
+        height: 20rem;
+        padding: 2.5rem 0rem;
         border-radius: 6px;
     }
 
     #album{
-        width: 30rem;
-        height: 30rem;
-        border-radius: 0.4rem;
+        width: 15rem;
+        height: 15rem;
+        border-radius: 0.2rem;
+    }
+    .midle{
+        width: 17rem;
+        height: 2rem;
+    }
+    .fas {
+        font-size: 1rem;
+    }
+    .progress-bar{
+        height: 2px;
     }
 
-    .fas {
-        font-size: 2rem;
+    .bar-right-not-pb{
+        height: 2rem;
+        width: 17rem;
+    }
+    .controls{
+        width: 17rem;
+        height: 2rem;
+        margin: 0;
     }
 
     .bar-right{
-        width:40rem;
-        height: 10rem;
-        margin-bottom: 10rem;
+        width:20rem;
+        height: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    #mute-volume, #max-volume{
+        font-size:0.8rem
+    }
+
+    #current-time-song, #time-song{
+        font-size: 0.7rem;
+    }
+
+    .volume-status{
+        width: 8rem;
+        height: 2rem;
+        margin-top: 0.5rem;
+    }
+    .volume-bar{
+        height: 0.2rem;
+        margin-top: 0.25rem;
     }
     
 }
