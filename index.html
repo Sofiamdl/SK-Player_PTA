@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SK Player</title>
+    <link rel="stylesheet" href="./styles.css" media="all">
+    <meta name = "viewport" content="width-device-width, initial-scale =1">
+    <script src="https://kit.fontawesome.com/43b0f023f1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class= "main-page">
+        <h1 class = "title-page">Bem-vinde ao Player do Stray Kids!!!</h1>
+        <div class="player" id="player">
+            <audio  id = "#audio"></audio>
+            <div class="image">
+                <img id= "album">
+            </div>
+            <div class= "bar-right">
+                <div class = "bar-right-not-pb">
+                    <h1 id= "nome-musica"></h1>
+                    <img class = "logo" src= "./assets/logo-sk.png"> 
+                </div>
+                <div class = "midle">
+                    <p id= "current-time-song"></p>
+                    <input type="range"  value = 0 class="progress-bar">
+                    <p id = "time-song"></p>
+                </div>
+                <div class = "controls">
+                    <a id ="before" class="fas fa-fast-backward"></a>                   
+                    <a id="backward"class="fas fa-backward"></a>
+                    <a id = "play" class="fas fa-play" ></a>
+                    <a id="forward"class="fas fa-forward"></a>
+                    <a id ="next" class="fas fa-fast-forward"></a>
+                </div>
+                <div class= "volume-status">
+                    <a id ="mute-volume" class="fas fa-volume-down"></a>   
+                    <input type="range"  value = 50 class="volume-bar">
+                    <a id ="max-volume" class="fas fa-volume-up"></a>      
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <script src="./js/player.js"></script>
+    <script src="./js/data.js"></script>
+    <script>
+        const p1 = new Player({ playerId: 'player' })
+    </script>
+</body>
+</html>

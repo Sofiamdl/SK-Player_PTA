@@ -1,0 +1,208 @@
+*{
+    font-family: 'Roboto', 'sans-serif';
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #4b4b4b;
+}
+
+.title-page{
+    color: #D3D3D3;
+}
+
+.main-page{
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #141414;
+    position: relative;
+    width:70rem ;
+    height: 13rem;
+    background: #141414;
+    border-radius: 6px;
+}
+
+.image{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:13rem;
+    height: 100%;
+    background-color: #000000;
+    border-radius: 6px;
+}
+
+#album{
+    width: 10.5rem;
+    height: 10.5rem;
+    border-radius: 6px;
+    opacity: 0.7;
+    z-index:1
+}
+
+.bar-right{
+    height: 100%;
+    width: 57rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar-right-not-pb{
+    height: 5rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+}
+
+#nome-musica{
+    font-family: 'Roboto', sans-serif;
+    color: #D3D3D3;
+    size: 2rem;
+}
+
+.logo{
+    height: 2.8rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+.midle{
+    height: 40px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#current-time-song{
+    padding: 2px;
+    border-radius: 15%;
+    margin: 0 4px;
+    color:  #a19f9f;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.progress-bar {
+    background: grey;
+    height: 3px;
+    width: 80%;
+    border: none;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    cursor: pointer; 
+}
+
+#time-song{
+    padding: 2px;
+    border-radius: 15%;
+    margin-left: 1px;
+    color:  #a19f9f;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+
+
+.controls{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:25rem;
+    margin: 0.7rem 0;
+}
+
+#next, #before{
+    padding: 0 2rem;
+}
+
+#play {
+    color: #D3D3D3;
+}
+
+ #play:hover{
+    color:#525252
+}
+
+.fas {
+    color: #a19f9f;
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.fas:hover{
+    color:#525252
+}
+
+.volume-status{
+    width:14rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.volume-bar{
+    width: 70%;
+}
+
+#mute-volume, #max-volume{
+    font-size:1.3rem
+}
+
+@media (max-width: 768px){
+    .title-page{
+        font-size:3rem ;
+        text-align:center
+    }
+
+    
+    .main-page{
+        height:70rem;
+        width: 45rem;
+    }
+    .player{
+        width: auto;
+        height: auto;
+        flex-direction: column !important;
+        justify-content: space-between;
+        height: 54rem;
+        width: 40rem;
+    }
+    .image{
+        width: 100%;
+        height: 30rem;
+        padding: 5rem 0rem;
+        border-radius: 6px;
+    }
+
+    #album{
+        width: 30rem;
+        height: 30rem;
+        border-radius: 0.4rem;
+    }
+
+    .fas {
+        font-size: 2rem;
+    }
+
+    .bar-right{
+        width:40rem;
+        height: 10rem;
+        margin-bottom: 10rem;
+    }
+    
+}
